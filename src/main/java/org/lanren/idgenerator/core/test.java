@@ -6,14 +6,15 @@ import java.util.concurrent.LinkedBlockingQueue;
 import java.util.concurrent.ThreadPoolExecutor;
 import java.util.concurrent.TimeUnit;
 
-class Test {
+class test {
     private static String str = null;
     private Object queue = new Object();
 
     public static void main(String[] args) {
-        Test test = new Test();
+        test test = new test();
         Producer producer = test.new Producer();
         Consumer consumer = test.new Consumer();
+
         producer.run();
         consumer.start();
     }
